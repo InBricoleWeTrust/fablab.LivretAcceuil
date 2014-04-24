@@ -1,5 +1,5 @@
-\documentclass[a5paper,11pt]{article}
-\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm,twoside=true]{geometry}
+\documentclass[a5paper,11pt]{article} %Le format A5, pratique à emporter
+\usepackage[left=2.5cm,right=2cm,top=1cm,bottom=1.5cm,twoside=true]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{french}
@@ -7,31 +7,28 @@
 \usepackage{graphicx}
 \usepackage{garamondx}
 
-
 \title{FabLab de Pau} %Nom à revoir
 \author{PauLLA -- C.D.A. Pau Porte des Pyrénées}
-\date{\vfill Version RC 1 -- Avril 2014}
 
 \begin{document}
 
 
-\maketitle\thispagestyle{empty}
+%\maketitle\thispagestyle{empty}
+%\pagebreak
+\thispagestyle{empty}
+\input{001-garde}
 \pagebreak
+~ \vfill % workaround pour centrer la table des matières...
 \tableofcontents\thispagestyle{empty}
-
+~ \vfill % workaround pour centrer la table des matières...
 \pagebreak\section{Introduction}
 \input{100-intro}
-\pagebreak\section{Ce que n'est pas le FabLab}
 \pagebreak\section{Charte du FabLab}
 \input{400-charte}
-\pagebreak\section{Utilisation du matériel}
-\subsection{Conditions d'accès}
-\subsection{Outillage disponible}
-\subsection{Tarifications}
-\subsubsection{Découpeuse \textsc{Laser}}
-\subsubsection{Imprimante 3D}
 \pagebreak\section{Règlement intérieur}
 \input{600-reglement}
+\pagebreak\section{Fiche projet type}
+\input{700-ficheprojet}
 \pagebreak\section{Contact}
 \input{999-contact}
 \end{document}
